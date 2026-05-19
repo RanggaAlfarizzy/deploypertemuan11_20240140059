@@ -19,6 +19,6 @@ public class User {
     private String id;
     private String username;
     private String password;
-    @OneToOne(mappedBy = "users", cascade = CascadeType.ALL)
+    @OneToOne(mappedBy = "user", cascade = CascadeType.ALL)
     private Profile profile;
 }
