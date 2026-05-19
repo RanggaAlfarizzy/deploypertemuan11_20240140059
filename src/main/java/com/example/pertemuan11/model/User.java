@@ -18,7 +18,7 @@ public class User {
     @Id
     private String id;
     private String username;
-    private Spring password;
+    private String password;
     @OneToOne(mappedBy = "users", cascade = CascadeType.ALL)
     private Profile profile;
 }
